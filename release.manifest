@@ -1,0 +1,89 @@
+CACHE MANIFEST
+
+CACHE:
+/TW-TC20/semantic.js
+/TW-TC20/main.js
+/TW-TC20/pxtapp.js
+/TW-TC20/typescript.js
+/TW-TC20/marked/marked.min.js
+/TW-TC20/highlight.js/highlight.pack.js
+/TW-TC20/jquery.js
+/TW-TC20/pxtlib.js
+/TW-TC20/pxtcompiler.js
+/TW-TC20/pxtpy.js
+/TW-TC20/pxtblockly.js
+/TW-TC20/pxteditor.js
+/TW-TC20/pxtsim.js
+/TW-TC20/pxtembed.js
+/TW-TC20/pxtworker.js
+/TW-TC20/pxtweb.js
+/TW-TC20/blockly.css
+/TW-TC20/semantic.css
+/TW-TC20/rtlsemantic.css
+
+
+/TW-TC20/editor.js
+/TW-TC20/fieldeditors.js
+
+# blockly
+/TW-TC20/blockly/media/sprites.png
+/TW-TC20/blockly/media/click.mp3
+/TW-TC20/blockly/media/disconnect.wav
+/TW-TC20/blockly/media/delete.mp3
+
+# monaco; keep in sync with webapp/public/index.html
+/TW-TC20/vs/loader.js
+/TW-TC20/vs/base/worker/workerMain.js
+/TW-TC20/vs/basic-languages/bat/bat.js
+/TW-TC20/vs/basic-languages/cpp/cpp.js
+/TW-TC20/vs/basic-languages/python/python.js
+/TW-TC20/vs/basic-languages/typescript/typescript.js
+/TW-TC20/vs/basic-languages/markdown/markdown.js
+/TW-TC20/vs/editor/editor.main.css
+/TW-TC20/vs/editor/editor.main.js
+/TW-TC20/vs/editor/editor.main.nls.js
+/TW-TC20/vs/language/json/jsonMode.js
+/TW-TC20/vs/language/json/jsonWorker.js
+/TW-TC20/vs/language/typescript/tsMode.js
+/TW-TC20/vs/language/typescript/tsWorker.js
+
+# charts
+/TW-TC20/smoothie/smoothie_compressed.js
+/TW-TC20/images/Bars_black.gif
+
+# gifjs
+/TW-TC20/gifjs/gif.js
+
+# ai
+/TW-TC20/ai.0.js
+
+/TW-TC20/worker.js
+/TW-TC20/monacoworker.js
+
+# ver Mon Feb 19 2024 17:07:03 GMT-0600 (Central Standard Time)
+
+# target
+/TW-TC20/docs/static/providers/github-mark.png
+/TW-TC20/docs/static/providers/microsoft-logo.svg
+/TW-TC20/docs/static/providers/google-logo.svg
+/TW-TC20/docs/static/providers/clever-logo.png
+/TW-TC20/docs/static/TC_logo.png
+/TW-TC20/docs/static/logo.square.white.svg
+/TW-TC20/docs/static/logo.portrait.black.svg
+/TW-TC20/docs/static/icons/apple-touch-icon.png
+/TW-TC20/docs/static/Logo_TW.png
+/TW-TC20/docs/static/herogallery/hero-banner.png
+/TW-TC20/docs/static/download/transfer.png
+/TW-TC20/docs/static/download/connect-microbit.gif
+/TW-TC20/docs/static/download/selecting-microbit.gif
+/TW-TC20/docs/static/download/successfully-paired.png
+/TW-TC20/docs/static/download/incompatible.png
+/TW-TC20/docs/static/download/device-forgotten.gif
+/TW-TC20/docs/static/download/browser-unpair-image.gif
+/TW-TC20/docs/static/winapp.PNG
+/TW-TC20/docs/static/profile/microbit-cloud.png
+
+/TW-TC20/target.js
+
+NETWORK:
+*

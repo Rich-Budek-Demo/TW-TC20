@@ -1,0 +1,19 @@
+CACHE MANIFEST
+
+CACHE:
+/TW-TC20/pxtsim.js
+/TW-TC20/sim.js
+
+/TW-TC20/sounds/giggle.wav
+/TW-TC20/sounds/happy.wav
+/TW-TC20/sounds/hello.wav
+/TW-TC20/sounds/mysterious.wav
+/TW-TC20/sounds/sad.wav
+/TW-TC20/sounds/slide.wav
+/TW-TC20/sounds/soaring.wav
+/TW-TC20/sounds/spring.wav
+/TW-TC20/sounds/twinkle.wav
+/TW-TC20/sounds/yawn.wav
+
+NETWORK:
+*

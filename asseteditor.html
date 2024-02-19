@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en"  manifest="/TW-TC20/release.manifest" data-framework="typescript">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" data-rtl="/TW-TC20/rtlsemantic.css" href="/TW-TC20/semantic.css" type="text/css">
+    <title>MakeCode Asset Editor</title>
+    <style>
+        #asset-editor-field-div {
+            height: 100%;
+        }
+        .image-editor-wrapper {
+            border-radius: 0;
+        }
+        .image-editor-confirm {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // This line gets patched up by the cloud
+        var pxtConfig = {
+    "relprefix": "/TW-TC20/",
+    "verprefix": "",
+    "workerjs": "/TW-TC20/worker.js",
+    "monacoworkerjs": "/TW-TC20/monacoworker.js",
+    "gifworkerjs": "/TW-TC20/gifjs/gif.worker.js",
+    "serviceworkerjs": "/TW-TC20/serviceworker.js",
+    "typeScriptWorkerJs": "/TW-TC20/tsworker.js",
+    "pxtVersion": "9.3.13",
+    "pxtRelId": "localDirRelId",
+    "pxtCdnUrl": "/TW-TC20/",
+    "commitCdnUrl": "/TW-TC20/",
+    "blobCdnUrl": "/TW-TC20/",
+    "cdnUrl": "/TW-TC20/",
+    "targetVersion": "0.0.0",
+    "targetRelId": "",
+    "targetUrl": "",
+    "targetId": "microbit",
+    "simUrl": "/TW-TC20/simulator.html",
+    "simserviceworkerUrl": "/TW-TC20/simulatorserviceworker.js",
+    "simworkerconfigUrl": "/TW-TC20/workerConfig.js",
+    "partsUrl": "/TW-TC20/siminstructions.html",
+    "runUrl": "/TW-TC20/run.html",
+    "docsUrl": "/TW-TC20/docs.html",
+    "multiUrl": "/TW-TC20/multi.html",
+    "asseteditorUrl": "/TW-TC20/asseteditor.html",
+    "skillmapUrl": "/TW-TC20/skillmap.html",
+    "authcodeUrl": "/TW-TC20/authcode.html",
+    "multiplayerUrl": "/TW-TC20/multiplayer.html",
+    "kioskUrl": "/TW-TC20/kiosk.html",
+    "teachertoolUrl": "/TW-TC20/teachertool.html",
+    "isStatic": true
+};
+    </script>
+    <script type="text/javascript" src="/TW-TC20/target.js"></script>
+    <!-- <script type="text/javascript" src="https://pxt.azureedge.net/blob/ec765d3ba50a09c8c8819ec80390b6ffa72e945a/target.js"></script> -->
+    <script type="text/javascript" src="/TW-TC20/pxtapp.js"></script>
+    <script>
+        pxt.setAppTarget(pxtTargetBundle);
+        // This can be overridden via the messages sent to the page
+        pxt.appTarget.runtime.palette = ["#000000","#ffffff","#ff2121","#ff93c4","#ff8135","#fff609","#249ca3","#78dc52","#003fad","#87f2ff","#8e2ec4","#a4839f","#5c406c","#e5cdc4","#91463d","#000000"];
+
+        // this get rewritten to blob URLs with SHAs while uploading to the cloud
+        // keep in sync with index.html
+        window.MonacoPaths = {
+            "vs/loader": "/TW-TC20/vs/loader.js",
+            "vs/base/worker/workerMain": "/TW-TC20/vs/base/worker/workerMain.js",
+            "vs/basic-languages/bat/bat": "/TW-TC20/vs/basic-languages/bat/bat.js",
+            "vs/basic-languages/cpp/cpp": "/TW-TC20/vs/basic-languages/cpp/cpp.js",
+            "vs/basic-languages/markdown/markdown": "/TW-TC20/vs/basic-languages/markdown/markdown.js",
+            "vs/basic-languages/python/python": "/TW-TC20/vs/basic-languages/python/python.js",
+            "vs/basic-languages/typescript/typescript": "/TW-TC20/vs/basic-languages/typescript/typescript.js",
+            "vs/editor/editor.main.css": "/TW-TC20/vs/editor/editor.main.css",
+            "vs/editor/editor.main": "/TW-TC20/vs/editor/editor.main.js",
+            "vs/editor/editor.main.nls": "/TW-TC20/vs/editor/editor.main.nls.js",
+            "vs/language/json/jsonMode": "/TW-TC20/vs/language/json/jsonMode.js",
+            "vs/language/json/jsonWorker": "/TW-TC20/vs/language/json/jsonWorker.js",
+            "vs/language/typescript/tsMode": "/TW-TC20/vs/language/typescript/tsMode.js",
+            "vs/language/typescript/tsWorker": "/TW-TC20/vs/language/typescript/tsWorker.js",
+            "lzma/lzma_worker-min.js": "/TW-TC20/lzma/lzma_worker-min.js",
+            "smoothie/smoothie_compressed.js": "/TW-TC20/smoothie/smoothie_compressed.js",
+            "pxtblockly.js": "/TW-TC20/pxtblockly.js",
+            "blockly.css": "/TW-TC20/blockly.css",
+            "rtlblockly.css": "/TW-TC20/rtlblockly.css",
+            "gifjs/gif.js": "/TW-TC20/gifjs/gif.js",
+            "qrcode/qrcode.min.js": "/TW-TC20/qrcode/qrcode.min.js",
+            "zip.js/zip.min.js": "/TW-TC20/zip.js/zip.min.js",
+            "pdf-lib/pdf-lib.min.js": "/TW-TC20/pdf-lib/pdf-lib.min.js",
+            "music-editor/apple.png": "/TW-TC20/music-editor/apple.png",
+            "music-editor/burger.png": "/TW-TC20/music-editor/burger.png",
+            "music-editor/cake.png": "/TW-TC20/music-editor/cake.png",
+            "music-editor/car.png": "/TW-TC20/music-editor/car.png",
+            "music-editor/cat.png": "/TW-TC20/music-editor/cat.png",
+            "music-editor/cherry.png": "/TW-TC20/music-editor/cherry.png",
+            "music-editor/clam.png": "/TW-TC20/music-editor/clam.png",
+            "music-editor/computer.png": "/TW-TC20/music-editor/computer.png",
+            "music-editor/crab.png": "/TW-TC20/music-editor/crab.png",
+            "music-editor/dog.png": "/TW-TC20/music-editor/dog.png",
+            "music-editor/duck.png": "/TW-TC20/music-editor/duck.png",
+            "music-editor/egg.png": "/TW-TC20/music-editor/egg.png",
+            "music-editor/explosion.png": "/TW-TC20/music-editor/explosion.png",
+            "music-editor/fish.png": "/TW-TC20/music-editor/fish.png",
+            "music-editor/ice-cream.png": "/TW-TC20/music-editor/ice-cream.png",
+            "music-editor/lemon.png": "/TW-TC20/music-editor/lemon.png",
+            "music-editor/snake.png": "/TW-TC20/music-editor/snake.png",
+            "music-editor/star.png": "/TW-TC20/music-editor/star.png",
+            "music-editor/strawberry.png": "/TW-TC20/music-editor/strawberry.png",
+            "music-editor/taco.png": "/TW-TC20/music-editor/taco.png",
+            "music-editor/bass-clef.svg": "/TW-TC20/music-editor/bass-clef.svg",
+            "music-editor/treble-clef.svg": "/TW-TC20/music-editor/treble-clef.svg",
+        }
+    </script>
+    <script type="text/javascript" src="/TW-TC20/pxtasseteditor.js"></script>
+    <div id="asset-editor-field-div">
+    </div>
+</body>
+
+</html>

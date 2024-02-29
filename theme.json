@@ -2241,9 +2241,9 @@
             ]
         }
     ],
-    "id": "microbit",
+    "id": "TW",
     "title": "TinkRcode 2.0",
-    "name": "makecode.microbit.org",
+    "name": "TinkRcode.com",
     "description": "A Blocks / Python code editor for TinkRworks.",
     "htmlDocIncludes": {}
 }

@@ -1891,7 +1891,7 @@ is something between <code>0</code> and <code>1023</code>.  A <code>0</code> is 
                     telemetryItem.properties = telemetryItem.properties || {};
                     telemetryItem.properties["cookie"] = isProduction;
                     if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
-                        telemetryItem.properties["target"] = "microbit";
+                        telemetryItem.properties["target"] = "TW";
                         return true;
                     }
                     telemetryItem.properties["target"] = pxtConfig.targetId;

@@ -55,8 +55,8 @@
     
 <!-- include offline-app-head.html -->
     <meta charset="UTF-8">
-    <title>makecode.microbit.org Offline App</title>
-    <meta name="Description" content="A makecode.microbit.org offline app" />
+    <title>TinkRcode.com Offline App</title>
+    <meta name="Description" content="A TinkRcode.com offline app" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/doccdn/semantic.css" />
     <link rel="stylesheet" href="/docfiles/target.css" />
@@ -547,17 +547,17 @@
         }
 
         function updateDownloadLinks(electronVersion) {
-            $("#download-win64").attr("href", "https://makecode.com/api/release/microbit/" + electronVersion + "/win64");
-            $("#download-mac64").attr("href", "https://makecode.com/api/release/microbit/" + electronVersion + "/mac64");
+            $("#download-win64").attr("href", "https://makecode.com/api/release/TW/" + electronVersion + "/win64");
+            $("#download-mac64").attr("href", "https://makecode.com/api/release/TW/" + electronVersion + "/mac64");
         }
         function downloadWin64() {
-            window.pxtTickEvent("offlineapp.download", { "target": "microbit", "platform": "win64" });
+            window.pxtTickEvent("offlineapp.download", { "target": "TW", "platform": "win64" });
         }
         function downloadMac64() {
-            window.pxtTickEvent("offlineapp.download", { "target": "microbit", "platform": "mac64" });
+            window.pxtTickEvent("offlineapp.download", { "target": "TW", "platform": "mac64" });
         }
         $(function () {
-            $.getJSON("https://makecode.com/api/config/microbit/targetconfig")
+            $.getJSON("https://makecode.com/api/config/TW/targetconfig")
                 .then(function (data) {
                     hideLoader();
                     if (data && data.electronManifest && data.electronManifest.latest) {
@@ -799,14 +799,14 @@ Educational Foundation. &copy; Micro:bit Educational Foundation. All rights rese
                         <h3 class="ui">Windows</h3>
                         <a id="download-win64" class="ui icon button" onclick="downloadWin64()">
                             <i class="download icon"></i>
-                            makecode-microbit-setup-win64.exe
+                            makecode-TW-setup-win64.exe
                         </a>
                     </div>
                     <div class="eight wide column">
                         <h3 class="ui">Mac OS</h3>
                         <a id="download-mac64" class="ui icon button" onclick="downloadMac64()">
                             <i class="download icon"></i>
-                            makecode-microbit-mac64.zip
+                            makecode-TW-mac64.zip
                         </a>
                     </div>
                 </div>
@@ -898,7 +898,7 @@ Educational Foundation. &copy; Micro:bit Educational Foundation. All rights rese
                     telemetryItem.properties = telemetryItem.properties || {};
                     telemetryItem.properties["cookie"] = isProduction;
                     if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
-                        telemetryItem.properties["target"] = "microbit";
+                        telemetryItem.properties["target"] = "TW";
                         return true;
                     }
                     telemetryItem.properties["target"] = pxtConfig.targetId;

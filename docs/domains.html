@@ -401,7 +401,7 @@
 
         addRow("https://makecode.microbit.org/")
         addRow("https://makecode.com");
-        addRow("https://trg-microbit.userpxt.io");
+        addRow("https://trg-TW.userpxt.io");
         addRow("https://pxt.azureedge.net");
         addRow("https://api.github.com");
         addRow("https://immersivereaderprod.cognitiveservices.azure.com");
@@ -492,7 +492,7 @@
                     telemetryItem.properties = telemetryItem.properties || {};
                     telemetryItem.properties["cookie"] = isProduction;
                     if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
-                        telemetryItem.properties["target"] = "microbit";
+                        telemetryItem.properties["target"] = "TW";
                         return true;
                     }
                     telemetryItem.properties["target"] = pxtConfig.targetId;

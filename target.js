@@ -1,7 +1,7 @@
 var pxtTargetBundle = {
-    "id": "microbit",
-    "nickname": "microbit",
-    "name": "makecode.microbit.org",
+    "id": "TW",
+    "nickname": "TW",
+    "name": "TinkRcode.com",
     "title": "TinkRcode 2.0",
     "description": "A Blocks / Python code editor for TinkRworks.",
     "corepkg": "core",
@@ -2627,9 +2627,9 @@ var pxtTargetBundle = {
                 ]
             }
         ],
-        "id": "microbit",
+        "id": "TW",
         "title": "TinkRcode 2.0",
-        "name": "makecode.microbit.org",
+        "name": "TinkRcode.com",
         "description": "A Blocks / Python code editor for TinkRworks.",
         "htmlDocIncludes": {}
     },

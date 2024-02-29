@@ -1903,7 +1903,7 @@ serial port to use the pins. The new configuration uses pin <code>P1</code> to t
                     telemetryItem.properties = telemetryItem.properties || {};
                     telemetryItem.properties["cookie"] = isProduction;
                     if (typeof pxtConfig === "undefined" || !pxtConfig || !pxtConfig.targetId) {
-                        telemetryItem.properties["target"] = "microbit";
+                        telemetryItem.properties["target"] = "TW";
                         return true;
                     }
                     telemetryItem.properties["target"] = pxtConfig.targetId;
